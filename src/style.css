@@ -1,7 +1,20 @@
+/* region page */
+html {
+  font-family: Manrope, sans-serif;
+  color: #1b2129;
+  line-height: 140%;
+  font-weight: 700;
+  font-style: normal;
+  align-items: center;
+}
+
 body {
   margin: 0;
 }
 
+/* #endregion page */
+
+/* #region header */
 .header {
   box-sizing: border-box;
   padding: 24px 20px 40px;
@@ -21,6 +34,18 @@ body {
   gap: 24px;
 }
 
+.header__title {
+  padding-top: 456px;
+  padding-left: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+/* #endregion header */
+
+/* #region icons */
 .icon {
   display: block;
   width: 24px;
@@ -38,11 +63,8 @@ body {
   background-image: url('images/icons/icon-burger-menu.png');
 }
 
-.header__title {
-  padding-top: 456px;
-  padding-left: 20px;
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  margin: 0;
-}
+/* #endregion icons */
+
+/* #region footer */
+
+/* #endregion footer */
