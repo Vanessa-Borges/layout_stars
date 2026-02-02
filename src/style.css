@@ -1,4 +1,4 @@
-/* region page */
+/* #region page */
 html {
   font-family: Manrope, sans-serif;
   color: #1b2129;
@@ -22,11 +22,15 @@ body {
   background-image: url(images/header-bg.png);
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__icons {
@@ -35,15 +39,37 @@ body {
 }
 
 .header__title {
-  padding-top: 456px;
-  padding-left: 20px;
-  font-size: 36px;
-  font-weight: 700;
+  line-height: 100%;
   color: #fff;
   margin: 0;
 }
 
 /* #endregion header */
+
+/* #region menu */
+.menu {
+  box-sizing: border-box;
+  padding: 24px 20px 40px;
+  height: 100vh;
+  background-color: #f9f9f9;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu:target {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #endregion menu */
 
 /* #region icons */
 .icon {
@@ -61,6 +87,10 @@ body {
 
 .icon--menu {
   background-image: url('images/icons/icon-burger-menu.png');
+}
+
+.icon--close {
+  background-image: url('images/icons/icon-close.png');
 }
 
 /* #endregion icons */
